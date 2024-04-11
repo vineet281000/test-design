@@ -1,0 +1,57 @@
+.sidebar{
+    width: 88px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    box-shadow: 1px 0 0 0 rgb(0 0 0 / 8%);
+    background-color: #fff;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.sidebar .icon{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.sidebar .icon.chat{
+    background-color: #111111;
+    border-radius: 50%;
+}
+
+.support{
+    margin-bottom: 20px;
+}
+
+.dot{
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color:#EA0000;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 6px;
+}
+
+.login{
+    margin-top:12px;
+}
+
+
+@media (max-width:768px) {
+    .sidebar{
+        display: none;
+    }
+}

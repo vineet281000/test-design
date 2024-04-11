@@ -1,0 +1,18 @@
+.input-field label{
+    display: block;
+    width: 100%;
+}
+
+.input-field input{
+    border: 1px solid #eaeaea;
+    outline: none;
+    background: #f5f7fa;
+    box-sizing: border-box;
+    padding: 8px 4px;
+    font-size: 12px;
+    color:#6a6c73;
+    margin-bottom: 10px;
+    width: calc(100% - 90px);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

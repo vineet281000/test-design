@@ -1,0 +1,119 @@
+.contact-page{
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+}
+
+.form-section{
+    margin: 0 auto;
+}
+
+
+.contactForm{
+    margin-top:120px;
+    width: 672px;
+}
+
+.contactForm h2{
+    text-align: center;
+}
+
+.contactForm form{
+    margin-top: 56px;
+}
+
+.field-row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 24px;
+    margin-bottom: 24px;
+    width: calc(100% - 24px);
+}
+
+.field-select{
+    display: grid;
+    grid-template-columns: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+.contact-message{
+    border-radius: 100px;
+    width: 100%;
+    height: 56px;
+    margin-bottom: 60px;
+    background-color: #111111;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+}
+
+.contact-details{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.info-card{
+    text-align: center;
+}
+
+.info-card .icon{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(17 17 17 / 8%);
+    border-radius: 50%;
+    margin: 24px auto 24px;
+}
+
+.info-card-content .contact-text{
+    margin-bottom: 8px;
+    font-size: 14px;
+    opacity: 60%;
+    font-weight: 500;
+}
+
+.info-card-content .contact-info{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.detail-section{
+    border-left: 1px solid rgb(0 0 0 / 8%);
+}
+
+@media(max-width:768px){
+    .contact-page{
+        grid-template-columns: initial
+    }
+    .contactForm h2{
+        font-size: 40px;
+    }
+
+    .contactForm form{
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    .field-row {
+        grid-template-columns: 100%;
+        margin-bottom: 16px;
+        grid-gap: 16px;
+        width: 100%;
+    }
+
+    .contact-details{
+        margin-top: 0;
+        row-gap: 130px;
+        justify-content: initial;
+        height: initial;
+        margin-bottom: 64px;
+    }
+}
