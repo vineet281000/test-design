@@ -1,4 +1,4 @@
-import { Icon } from '@iconify/react';
+import downArrowIcon from '../../assets/down-arrow.svg'
 import '../../styles/common.css'
 
 function Select (props) {
@@ -9,7 +9,7 @@ function Select (props) {
                 <option>{value}</option>
             </select>
             <span className='down-icon'>
-            <Icon icon="bx:chevron-down" width={36} opacity={0.32} />
+                <img src={downArrowIcon} />
             </span>
         </>
     )

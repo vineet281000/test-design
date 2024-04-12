@@ -1,4 +1,3 @@
-import { Icon } from '@iconify/react';
 
 function Infocard(props){
     const {icon, text, info} = props;
@@ -8,7 +7,7 @@ function Infocard(props){
         <>
             <div className="info-card">
                 <div className="icon">
-                    <Icon icon={icon} width={24}/>
+                    <img src={icon} />
                 </div>
                 <div className="info-card-content">
                     <div className='contact-text'>{text}</div>

@@ -1,4 +1,8 @@
-import { Icon } from '@iconify/react';
+import loginIcon from '../../assets/login_black.svg'
+import imagesIcon from '../../assets/collections_black.svg'
+import videoIcon from '../../assets/live_tv_black.svg'
+import helpIcon from '../../assets/help_outline_black.svg'
+import chatIcon from '../../assets/textsms_black.svg'
 import '../../styles/sidebar.css'
 
 function Sidebar () {
@@ -8,29 +12,27 @@ function Sidebar () {
                 <div className='wrapper'>
                     <div className='login'>
                         <div className='icon'>
-                            <Icon icon="ic:baseline-login" width={32}/>
+                            <img src={loginIcon} />
                         </div>
                     </div>
                     <div className='media'>
                         <div className='icon'>
-                          <Icon icon="mdi:images-outline" width={32}/>
+                            <img src={imagesIcon} />
                         </div>
                         <div className='icon'>
-                            <Icon icon="ic:round-live-tv" width={32}/>
+                            <img src={videoIcon} />
                             <span className='dot'></span>
                         </div>
                         <div className='icon'>
-                            <Icon icon="material-symbols:help-outline"  width={32}/>
+                        <img src={helpIcon} />
                         </div>
                     </div>
                     <div className='support'>
                         <div className='icon chat'>
-                            <Icon icon="ph:chat-dots" color='white' width={32} />
+                            <img src={chatIcon} />
                         </div>
                     </div>
                 </div>
-               
-                
             </div>
         </>
     )

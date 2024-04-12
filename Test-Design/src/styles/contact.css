@@ -1,13 +1,11 @@
 .contact-page{
     display: grid;
     grid-template-columns: 70% 30%;
-
 }
 
-.form-section{
+.form-section {
     margin: 0 auto;
 }
-
 
 .contactForm{
     margin-top:120px;
@@ -89,21 +87,39 @@
     border-left: 1px solid rgb(0 0 0 / 8%);
 }
 
+@media(max-width:1136px){
+    .field-row {
+        grid-template-columns: initial;
+        width: 100%;
+    }
+    .contact-page{
+        grid-template-columns: 60% 40%;
+    }
+
+    .contactForm{
+        width: initial;
+    }
+
+    .form-section {
+        margin: 0 16px;
+    }
+}
+
 @media(max-width:768px){
     .contact-page{
         grid-template-columns: initial
     }
+
     .contactForm h2{
         font-size: 40px;
     }
 
     .contactForm form{
         margin-top: 40px;
-        padding: 0 20px;
     }
 
     .field-row {
-        grid-template-columns: 100%;
+        grid-template-columns: initial;
         margin-bottom: 16px;
         grid-gap: 16px;
         width: 100%;
